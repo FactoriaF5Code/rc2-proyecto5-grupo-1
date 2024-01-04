@@ -1,8 +1,8 @@
-* {
-
+/* * {
+Para delimitar los bordes
     outline:1px solid red;
   
-  }
+  }*/
 :root {
     --main-bgcolormain: #060613;
     --main-colorblue: #08B7BA;
