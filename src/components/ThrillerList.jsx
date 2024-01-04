@@ -1,14 +1,13 @@
 import "./MovieLists.css";
 import "../index.css";
 import { Movie } from "./Movie.jsx";
-import dataMovies from "../data/data.json";
 
-export const ActionMovieList = () => {
-    const actionMovies = dataMovies.results.filter(movie => movie.genre_ids.includes(28));
+export const ThrillerList = () => {
+    const thrillerMovies = dataMovies.results.filter(movie => movie.genre_ids.includes(53));
     return (
         <>
             <div className="listTitle">
-                <h2 className="listTitleH2">Nuestras películas de acción favoritas</h2>
+                <h2 className="listTitleH2">Thrillers que te pondrán los pelos de punta</h2>
                 <div className="moreHover">
                     <button>VER MÁS
                         <svg id="arrowRight" width="12" height="8">
@@ -21,7 +20,7 @@ export const ActionMovieList = () => {
             <section className="scrollMovieList">
                 <div className="horizontalScroll">
                     <div className="secondaryMovieList">
-                        {actionMovies.map((movie, index) => (
+                        {thrillerMovies.map((movie, index) => (
                         <Movie key={index} film={movie} />
                         ))}
                     </div>

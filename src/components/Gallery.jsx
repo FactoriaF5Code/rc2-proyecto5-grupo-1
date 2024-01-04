@@ -34,13 +34,11 @@ export const Gallery = () => {
 //EL HTML QUE QUEREMOS QUE NOS MUESTRE
 return (
     <main>
-    <PremiereList />
+    <TerrorList />
 
-    <ActionMovieList />
+    <ComedyList />
 
-    <TopMovieList />
-
-    <FamilyMovieList />
+    <ThrillerList />
 </main>
     );
 };
