@@ -1,3 +1,12 @@
+:root {
+    --main-bgcolormain: #060613;
+    --main-colorblue: #08B7BA;
+    --main-colorwhite: #ffffff;
+    --main-colorpink: #F612AC;
+    --main-coloryellow: #FEED01;
+    --var-fontfamily: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .mainMenu{
     height: 32px;
     padding: 40px 55px;
@@ -9,11 +18,11 @@
 .mainMenu a{
     color:white;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .mainMenu img{
-    width: auto;
-    height: 1.5rem;
+    width: 280px;
     margin-right: 38px;
 }
 
@@ -27,7 +36,7 @@
 
 
 .mainNav a:hover {
-    color: #00FFA1;
+    color: var(--main-colorpink);
 }
 
 .secondaryNav{
@@ -36,9 +45,9 @@
 }
 
 .suscriptionButton{
-    background-color:#00FFA1;
+    background-color:var(--main-colorblue);
     color: #060613;
-    font-family: "Graphik", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: var(--var-fontfamily);
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
@@ -53,7 +62,7 @@
     border: 2px solid white;
     border-radius: 5px;
     color: white;
-    font-family: "Graphik", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: var(--var-fontfamily);
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;

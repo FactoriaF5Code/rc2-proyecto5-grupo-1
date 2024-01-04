@@ -7,18 +7,12 @@ export const Header = () => {
         <header>
             <nav className="mainMenu">
                 <div className="mainNav">
-                    <img src="public\imgs\LogoFilmin.svg" alt="Logotipo Filmin" />
+                    <img src="public/imgs/LOGO_RESTFLIX.png" alt="Logotipo Filmin" />
                     <a href="#">Inicio</a>
-                    <a href="#">Películas</a>
                     <a href="#">Series</a>
-                    <a href="#">Colecciones</a>
-                    <a href="#">Festivales</a>
-                    <a href="#">Más
-                        <svg id="arrowDown" width="12" height="8">
-                            <path className="st0" d="M11.8,0.3c-0.4-0.4-1-0.5-1.4-0.1L5.9,4.1L1.7,0.3c-0.4-0.4-1-0.3-1.4,0.1c-0.4,0.4-0.3,1,0.1,1.4l4.9,4.4
-                            c0.2,0.2,0.4,0.3,0.7,0.3c0.2,0,0.5-0.1,0.7-0.2l5.1-4.4C12.1,1.4,12.1,0.8,11.8,0.3z"/>
-                        </svg>
-                    </a>
+                    <a href="#">Películas</a>
+                    <a href="#">Novedades</a>
+                    <a href="#">Explorar por idiomas</a>
                 </div>
                 <div className="secondaryNav">
                     <button className="suscriptionButton">Suscríbete</button>

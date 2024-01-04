@@ -14,10 +14,8 @@ export const Movie = ({ film }) => {
 };
 
 Movie.propTypes = {
-  film: PropTypes.shape({
+    film: PropTypes.shape({
     poster_path: PropTypes.string.isRequired,
-    backdrop_path: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    overview: PropTypes.string.isRequired,
   }).isRequired,
 };

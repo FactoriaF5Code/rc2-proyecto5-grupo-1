@@ -1,8 +1,6 @@
 import "./Gallery.css";
-import "../index.css";
 import { Movie } from "./Movie";
 import { useEffect, useState } from "react";
-//import dataMovies from "../data/data.json";
 
 export const Gallery = () => {
 //IMPORTACIÓN DE LA API DE TMDB
