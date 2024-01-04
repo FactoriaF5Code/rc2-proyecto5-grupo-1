@@ -6,7 +6,7 @@ export const Movie = ({ film }) => {
   return (
     <article className="moviePoster">
       <div className="titulo-peli">
-        {movies.map((film) => <p>{film.title}</p>)}
+        <p>{film.title}</p>
         </div>
       <img
         src={`https://image.tmdb.org/t/p/w500${film.backdrop_path}`}

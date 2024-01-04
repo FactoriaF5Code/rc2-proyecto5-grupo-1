@@ -5,14 +5,6 @@ export const Footer = () => {
     return (
         <footer>
             <section className="footerMenu">
-                <nav className="footerNav">
-                    <a href="">Centro de Ayuda</a>
-                    <a href="">Contacto</a>
-                    <a href="">Canjear código</a>
-                    <a href="">Regala Filmin</a>
-                    <a href="">Aviso Legal</a>
-                    <a href="">Prensa</a>
-                </nav>
                 <nav className="socialMedia">
                     <a href="https://twitter.com/filmin">
                         <svg id="twitterLogo" width="23" height="18" viewBox="0 0 23 18">
@@ -37,11 +29,15 @@ export const Footer = () => {
                         </svg>
                     </a>
                 </nav>
+                <nav className="footerNav">
+                    <a href="">Política de privacidad</a>
+                    <a href="">Gestionar preferencias</a>
+                    <a href="">Condiciones de uso</a>
+                    <a href="">Centro de ayuda</a>
+                </nav>
             </section>
-            <section className="logoSponsor">
-                <a href="https://culture.ec.europa.eu/"><img src="public\imgs\LogoEurope.svg" alt="Logo Creative Europe Media" target="_blank" /></a>
-                <a href="#"><img src="public\imgs\logoIcaa.svg" alt="logo icaa" target="_blank" /></a>
-                <a href="http://cultura.gencat.cat/ca/inici/"><img src="public\imgs\LogoGeneralitat.svg" alt="logo Generalitat de Catalunya" target="_blank" /></a>
+            <section className="teamMembers">
+                <p>RESTflix.com es un proyecto de Ana Mari F. Emii S. Jonathan G. y Sandra R.</p>
             </section>
         </footer>
     );

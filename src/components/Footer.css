@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+  }
+
 :root {
     --main-bgcolormain: #060613;
     --main-colorblue: #08B7BA;
@@ -8,12 +16,11 @@
 }
 
 .footerMenu{
-    border-top: 1px solid #444548;
-    border-bottom: 1px solid #444548;
     padding: 40px 55px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
 }
 
 .footerNav a{
@@ -37,13 +44,18 @@
     fill: white;
 }
 
-.logoSponsor{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 40px 55px;
+.teamMembers p{
+    padding: 15px 0;
+    font-family: var(--var-fontfamily);
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    margin: 20px;
 }
 
-.logoSponsor img{
-    padding-right: 2rem;
+.teamMembers {
+    background-color: var(--main-colorblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
