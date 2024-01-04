@@ -1,5 +1,8 @@
 import "./Gallery.css";
-import { Movie } from "./Movie";
+import "../App.css";
+import { TerrorList } from './TerrorList.jsx';
+import { ComedyList } from './ComedyList.jsx';
+import { ThrillerList } from './ThrillerList.jsx';
 import { useEffect, useState } from "react";
 
 export const Gallery = () => {
@@ -30,10 +33,14 @@ export const Gallery = () => {
 
 //EL HTML QUE QUEREMOS QUE NOS MUESTRE
 return (
-    <main className="catalogue">
-        {movies.map((movie, index) => (
-        <Movie key={index} film={movie} />
-    ))}
-    </main>
+    <main>
+    <PremiereList />
+
+    <ActionMovieList />
+
+    <TopMovieList />
+
+    <FamilyMovieList />
+</main>
     );
 };
