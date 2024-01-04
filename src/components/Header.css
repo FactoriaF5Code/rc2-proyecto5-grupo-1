@@ -1,0 +1,78 @@
+.mainMenu{
+    height: 32px;
+    padding: 40px 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainMenu a{
+    color:white;
+    font-weight: 700;
+}
+
+.mainMenu img{
+    width: auto;
+    height: 1.5rem;
+    margin-right: 38px;
+}
+
+.mainNav{
+    display: flex;
+}
+
+.mainNav a{
+    margin-right:33px;
+}
+
+
+.mainNav a:hover {
+    color: #00FFA1;
+}
+
+.secondaryNav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.suscriptionButton{
+    background-color:#00FFA1;
+    color: #060613;
+    font-family: "Graphik", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.loginButton{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-family: "Graphik", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+#arrowDown {
+    fill: white;
+    padding-left: 0.5rem;
+}
+
+.searchIcon{
+    background-color: transparent;
+    cursor: pointer;
+    fill: white;
+}
+
+.searchIcon svg:hover, #arrowDown:hover{
+    fill: #00FFA1;
+}

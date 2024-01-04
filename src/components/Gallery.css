@@ -1,0 +1,7 @@
+main {
+    padding: 40px 55px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
