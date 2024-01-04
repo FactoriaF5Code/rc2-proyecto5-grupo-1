@@ -6,7 +6,7 @@ export const Movie = ({ film }) => {
   return (
     <article className="moviePoster">
       <img
-        src={`https://image.tmdb.org/t/p/w500${film.poster_path}`}
+        src={`https://image.tmdb.org/t/p/w500${film.backdrop_path}`}
         alt={film.title}
       />
     </article>
@@ -15,7 +15,7 @@ export const Movie = ({ film }) => {
 
 Movie.propTypes = {
     film: PropTypes.shape({
-    poster_path: PropTypes.string.isRequired,
+    backdrop_path: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
   }).isRequired,
 };
