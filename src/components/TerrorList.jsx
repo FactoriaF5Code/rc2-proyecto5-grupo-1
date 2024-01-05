@@ -1,9 +1,24 @@
 import "./MovieLists.css";
-import "../index.css";
 import { Movie } from "./Movie.jsx";
+import { useEffect, useState } from "react";
 
 export const TerrorList = () => {
-    const terrorMovies = dataMovies.results.filter(movie => movie.genre_ids.includes(27));
+    const [terrorMovies, setTerrorMovies] = useState([]);
+
+    useEffect(() => {
+        const apiKey = "ca058e3f495796073a20627d0140ccc3";
+        const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=27&language=es-ES`;
+        
+    fetch(url)
+            .then((response) => response.json())
+            .then((data) => {
+            setTerrorMovies(data.results);
+        })
+        .catch((error) => {
+            console.error("Error al obtener datos de la API:", error);
+        });
+    }, []);
+
     return (
         <>
             <div className="listTitle">
@@ -19,7 +34,7 @@ export const TerrorList = () => {
             </div>
             <section className="scrollMovieList">
                 <div className="horizontalScroll">
-                    <div className="secondaryMovieList">
+                    <div className="movieList">
                         {terrorMovies.map((movie, index) => (
                         <Movie key={index} film={movie} />
                         ))}

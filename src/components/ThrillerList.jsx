@@ -1,9 +1,24 @@
 import "./MovieLists.css";
-import "../index.css";
 import { Movie } from "./Movie.jsx";
+import { useEffect, useState } from "react";
 
 export const ThrillerList = () => {
-    const thrillerMovies = dataMovies.results.filter(movie => movie.genre_ids.includes(53));
+    const [thrillerMovies, setThrillerMovies] = useState([]);
+
+    useEffect(() => {
+        const apiKey = "ca058e3f495796073a20627d0140ccc3";
+        const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=53&language=es-ES`;
+        
+    fetch(url)
+            .then((response) => response.json())
+            .then((data) => {
+            setThrillerMovies(data.results);
+        })
+        .catch((error) => {
+            console.error("Error al obtener datos de la API:", error);
+        });
+    }, []);
+
     return (
         <>
             <div className="listTitle">

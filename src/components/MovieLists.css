@@ -1,3 +1,7 @@
+* {
+    outline: 1px solid red;
+}
+
 .listTitle{
     display: flex;
     align-items: center;
@@ -63,7 +67,7 @@ button{
     padding: 4px;
 }
 
-.secondaryMovieList {
+.movieList {
     display: flex;
     justify-content: flex-start;
     gap: 1rem;
