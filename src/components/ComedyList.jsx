@@ -21,7 +21,9 @@ export const ComedyList = () => {
 
     return (
         <>
+            <main className="galleryMovies">
             <div className="listTitle">
+                <img className="iconTitle" src="public/imgs/comedy.svg" alt="icono comedy" />
                 <h2 className="listTitleH2">¡El resbalón con el que te vas a descojonar!</h2>
                 <div className="moreHover">
                     <button>VER MÁS
@@ -32,7 +34,7 @@ export const ComedyList = () => {
                     </button>
                 </div>
             </div>
-            <section className="scrollMovieList">
+            
                 <div className="horizontalScroll">
                     <div className="movieList">
                         {comedyMovies.map((movie, index) => (
@@ -40,7 +42,7 @@ export const ComedyList = () => {
                         ))}
                     </div>
                 </div>
-            </section>
+            </main>
         </>
     );
 };

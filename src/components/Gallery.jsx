@@ -5,17 +5,17 @@ import { ComedyList } from "./ComedyList.jsx";
 import { ThrillerList } from "./ThrillerList.jsx";
 
 
+
 export const Gallery = () => {
 
 //EL HTML QUE QUEREMOS QUE NOS MUESTRE
 return (
-    <main>
+    <main className = "mainGallery">
         <TerrorList />
 
         <ComedyList />
 
         <ThrillerList />
-
     </main>
     );
 };

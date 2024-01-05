@@ -22,4 +22,5 @@ html {
 body {
   background: radial-gradient(157.45% 62.61% at 97.97% 91.06%, #053536 0%, #101010 86.98%);  
   font-family: var(--var-fontfamily);
+  width: 100%;
 }
