@@ -44,18 +44,14 @@
     fill: white;
 }
 
-.teamMembers p{
-    padding: 15px 0;
-    font-family: var(--var-fontfamily);
-    font-size: 15px;
-    font-weight: 500;
-    color: black;
-    margin: 20px;
-}
-
 .teamMembers {
     background-color: var(--main-colorblue);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: var(--var-fontfamily);
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    padding: 10px;
 }

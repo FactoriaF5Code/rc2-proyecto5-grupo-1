@@ -13,6 +13,8 @@
     justify-content: center;
     margin-bottom: 52px;
     overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(93, 93, 95, 0.7) transparent;
 }
 
 .galleryMovies::-webkit-scrollbar {
@@ -22,6 +24,7 @@
 .galleryMovies::-webkit-scrollbar-thumb {
     background-color: rgba(93, 93, 95, 0.7);
     border-radius: 4px;
+
 }
 
 

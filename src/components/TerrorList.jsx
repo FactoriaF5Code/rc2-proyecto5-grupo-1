@@ -12,7 +12,7 @@ export const TerrorList = () => {
     fetch(url)
             .then((response) => response.json())
             .then((data) => {
-            setTerrorMovies(data.results);
+                setTerrorMovies(data.results);
         })
         .catch((error) => {
             console.error("Error al obtener datos de la API:", error);

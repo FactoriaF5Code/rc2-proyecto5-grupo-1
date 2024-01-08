@@ -1,10 +1,5 @@
-/* * {
-Para delimitar los bordes
-    outline:1px solid red;
-  
-  }*/
 :root {
-    --main-bgcolormain: #060613;
+    --main-bgcolormain: #101010;
     --main-colorblue: #08B7BA;
     --main-colorwhite: #ffffff;
     --main-colorpink: #F612AC;
@@ -13,12 +8,17 @@ Para delimitar los bordes
 }
 
 header {
-    background: rgba(0, 0, 0, 0.46);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #101010ee;
+    z-index: 1;
+    box-shadow: 0px 20px 27px -17px rgb(0, 0, 0);
 }
 
 .mainMenu {
     height: 32px;
-    padding: 40px 55px;
+    padding: 30px 55px;
     display: flex;
     justify-content: space-between;
     align-items: center;

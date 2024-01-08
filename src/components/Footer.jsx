@@ -37,7 +37,7 @@ export const Footer = () => {
                 </nav>
             </section>
             <section className="teamMembers">
-                <p>RESTflix.com es un proyecto de Ana Mari F. Emii S. Jonathan G. y Sandra R.</p>
+                RESTflix.com es un proyecto de Ana Mari F. Emii S. Jonathan G. y Sandra R.
             </section>
         </footer>
     );
