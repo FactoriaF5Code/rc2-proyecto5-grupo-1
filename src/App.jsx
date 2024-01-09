@@ -1,21 +1,22 @@
-import { Header } from "./components/Header";
-import { Slider } from "./components/Slider/Slider.jsx";
-import { Gallery } from "./components/Gallery";
-import { Footer } from "./components/Footer";
-import './App.css'
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./components/Home";
+import { HomeCat } from "./components/HomeCat";
+import "./App.css";
 
 function App() {
   return (
     <>
-      <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cat" element={<HomeCat />} />
+        </Routes>
 
-      <Slider />
-
-      <Gallery />
-
-      <Footer />
+      {/* <Routes>
+        <Route path="/" element={<Home language={"es"} />} />
+        <Route path="/cat" element={<Home language={"cat"} />} />
+      </Routes> */}
     </>
-  )
+  );
 }
 
 export default App;

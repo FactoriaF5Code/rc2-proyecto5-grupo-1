@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import "./Header.css";
-import "../index.css";
+import "./Header.css"; 
 import { IconSearch } from "./Svg/IconSearch.jsx";
 import { IconLanguage } from "./Svg/IconLanguage.jsx";
 
-export const Header = () => {
+export const HeaderCat = () => {
   return (
     <header>
         
@@ -13,14 +12,14 @@ export const Header = () => {
           <img src="public/imgs/LOGO_RESTFLIX.png" alt="Logotipo Filmin" />
         </div>
         <div className="mainNav">
-          <a href="#">Inicio</a>
-          <a href="#">Series</a>
-          <a href="#">Películas</a>
-          <a href="#">Novedades</a>
-          <a href="#">Explorar por idiomas</a>
+          <a href="#">Inici</a>
+          <a href="#">Sèries</a>
+          <a href="#">Pel·lícules</a>
+          <a href="#">Novetats</a>
+          <a href="#">Explorar per idiomes</a>
         </div>
         <div className="secondaryNav">
-          <button className="suscriptionButton">Suscríbete</button>
+          <button className="suscriptionButton">Subscriu-te</button>
           <button className="searchButton">
             <IconSearch />
           </button>
@@ -30,12 +29,12 @@ export const Header = () => {
               <ul className="language">
                 <li>
                   <Link to="/">
-                    Español
+                    Espanyol
                   </Link>
                 </li>
                 <li>
                   <Link to="/cat">
-                    Catalán
+                    Català
                   </Link>
                 </li>
               </ul>

@@ -50,6 +50,7 @@ header {
 .secondaryNav {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .suscriptionButton {
@@ -63,6 +64,7 @@ header {
     border-radius: 5px;
     margin-right: 1rem;
     cursor: pointer;
+    margin-top: 0;
 }
 
 .suscriptionButton:hover {
@@ -70,18 +72,64 @@ header {
 
 }
 
-#arrowDown {
-    fill: white;
-    padding-left: 0.5rem;
-}
-
-.searchIcon {
-    background-color: transparent;
+.searchButton {
     cursor: pointer;
+    width: 24px;
     fill: white;
 }
 
-.searchIcon svg:hover,
-#arrowDown:hover {
+.searchButton:hover {
     fill: var(--main-colorpink);
 }
+
+.selectLanguage{
+    width: 150px;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding-left: 40px;
+}
+
+.iconWorld{
+    fill: rgb(153, 153, 153);
+    width: 28px;
+}
+
+.language{
+    font-family: var(--var-fontfamily);
+    text-transform: uppercase;
+    background-color: transparent;
+    color: rgb(153, 153, 153);
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* 
+#language{
+    font-family: var(--var-fontfamily);
+    text-transform: uppercase;
+    background-color: transparent;
+    color: rgb(153, 153, 153);
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    border: none;
+} */
+
+
+/* Si queremos dar un estilo más personalizado al selector de idioma
+    es mejor utilizar otro elemento html como ul - li o div
+    y añadirle la propiedad de selección con JS */
+/* #language option{
+    background-color: var(--main-colorblue);
+    border: none;
+    color:  #101010;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    padding: 40px;
+    font-family: var(--var-fontfamily);
+} */
