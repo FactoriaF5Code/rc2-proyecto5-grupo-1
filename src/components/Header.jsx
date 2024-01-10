@@ -25,7 +25,7 @@ export const Header = ({ currentLanguage, setCurrentLanguage }) => {
         </div>
         <div className="secondaryNav">
           <button className="suscriptionButton">
-            {translatedTexts.suscribete}
+            <Link to="/login">{translatedTexts.suscribete}</Link>
           </button>
           <button className="searchButton">
             <IconSearch />

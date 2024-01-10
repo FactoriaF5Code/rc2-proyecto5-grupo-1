@@ -1,23 +1,17 @@
-import { useState } from "react";
 import "./App.css";
-import { Header } from "./components/Header";
-import { Slider } from "./components/Slider/Slider";
-import { Gallery } from "./components/Gallery";
-import { Footer } from "./components/Footer";
+import { Home } from "./components/Home"
+import { Login } from "./components/Login.jsx"
+import { Routes, Route } from "react-router-dom";
 
 function App()  {
-  
-  const [currentLanguage, setCurrentLanguage] = useState("es");
 
   return (
     <>
-      <Header currentLanguage={currentLanguage} setCurrentLanguage={setCurrentLanguage} />
-
-      <Slider currentLanguage={currentLanguage} />
-
-      <Gallery currentLanguage={currentLanguage} />
-
-      <Footer currentLanguage={currentLanguage}  />
+        <Routes>
+          <Route path="/" element={<Home />}  />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/de" element={<Home language={"de"} />} />
+        </Routes>
 
     </>
   );

@@ -1,21 +1,22 @@
+import { useState } from "react";
 import { Header } from "./Header";
 import { Slider } from "./Slider/Slider";
 import { Gallery } from "./Gallery";
 import { Footer } from "./Footer";
 
 export const Home = () => {
+  const [currentLanguage, setCurrentLanguage] = useState("es");
 
   return (
     <>
-      <Header />
+      <Header currentLanguage={currentLanguage} setCurrentLanguage={setCurrentLanguage} />
 
-      <Slider />
+      <Slider currentLanguage={currentLanguage} />
 
-      <Gallery />
+      <Gallery currentLanguage={currentLanguage} />
 
-      <Footer />
-      
+      <Footer currentLanguage={currentLanguage}  />
+
     </>
   );
 };
-
