@@ -82,54 +82,37 @@ header {
     fill: var(--main-colorpink);
 }
 
-.selectLanguage{
-    width: 150px;
+.selectLanguage {
+    width: 120px;
     height: fit-content;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     margin: 0;
-    padding-left: 40px;
+    margin-top:4px;
 }
 
-.iconWorld{
-    fill: rgb(153, 153, 153);
+.iconWorld {
+    fill: rgb(99, 99, 99);
     width: 28px;
 }
 
-.language{
+.language {
     font-family: var(--var-fontfamily);
     text-transform: uppercase;
     background-color: transparent;
-    color: rgb(153, 153, 153);
     font-weight: 500;
     letter-spacing: 0.2em;
     font-size: 14px;
     cursor: pointer;
+    margin-bottom: 4px;
 }
 
-/* 
-#language{
-    font-family: var(--var-fontfamily);
-    text-transform: uppercase;
-    background-color: transparent;
-    color: rgb(153, 153, 153);
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    border: none;
-} */
+.language a{
+    color: rgb(99, 99, 99);
+}
 
-
-/* Si queremos dar un estilo más personalizado al selector de idioma
-    es mejor utilizar otro elemento html como ul - li o div
-    y añadirle la propiedad de selección con JS */
-/* #language option{
-    background-color: var(--main-colorblue);
-    border: none;
-    color:  #101010;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    padding: 40px;
-    font-family: var(--var-fontfamily);
-} */
+.language a:hover{
+    color:var(--main-colorpink);
+}

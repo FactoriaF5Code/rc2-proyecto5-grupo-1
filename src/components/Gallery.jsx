@@ -1,21 +1,19 @@
+import { useState } from "react";
 import "./Gallery.css";
 import "../App.css";
 import { TerrorList } from './TerrorList.jsx';
 import { ComedyList } from "./ComedyList.jsx";
 import { ThrillerList } from "./ThrillerList.jsx";
 
+export const Gallery = ({ currentLanguage }) => {
 
-
-export const Gallery = () => {
-
-//EL HTML QUE QUEREMOS QUE NOS MUESTRE
 return (
     <main className = "mainGallery">
-        <TerrorList />
+        <TerrorList currentLanguage={currentLanguage} />
 
-        <ComedyList />
+        <ComedyList currentLanguage={currentLanguage} />
 
-        <ThrillerList />
+        <ThrillerList currentLanguage={currentLanguage} />
     </main>
     );
 };

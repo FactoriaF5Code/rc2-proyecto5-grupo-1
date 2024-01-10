@@ -1,20 +1,24 @@
-import { Route, Routes } from "react-router-dom";
-import { Home } from "./components/Home";
-import { HomeCat } from "./components/HomeCat";
+import { useState } from "react";
 import "./App.css";
+import { Header } from "./components/Header";
+import { Slider } from "./components/Slider/Slider";
+import { Gallery } from "./components/Gallery";
+import { Footer } from "./components/Footer";
 
-function App() {
+function App()  {
+  
+  const [currentLanguage, setCurrentLanguage] = useState("es");
+
   return (
     <>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/cat" element={<HomeCat />} />
-        </Routes>
+      <Header currentLanguage={currentLanguage} setCurrentLanguage={setCurrentLanguage} />
 
-      {/* <Routes>
-        <Route path="/" element={<Home language={"es"} />} />
-        <Route path="/cat" element={<Home language={"cat"} />} />
-      </Routes> */}
+      <Slider currentLanguage={currentLanguage} />
+
+      <Gallery currentLanguage={currentLanguage} />
+
+      <Footer currentLanguage={currentLanguage}  />
+
     </>
   );
 }
