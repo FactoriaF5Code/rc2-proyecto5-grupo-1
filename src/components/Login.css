@@ -1,0 +1,15 @@
+div[style="text-align: center; margin: 50px;"] {
+    text-align: center;
+    margin: 50px;
+}
+
+.subscribe-form {
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}

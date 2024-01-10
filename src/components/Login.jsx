@@ -1,12 +1,14 @@
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import "./Login.css";
+import  { useState } from "react";
 
 export const Login = () => {
-
+    const [currentLanguage, setCurrentLanguage] = useState("es");
     return (
         <>
-            <Header />
+
+<Header currentLanguage={currentLanguage} setCurrentLanguage={setCurrentLanguage} />
 
             <div style="text-align: center; margin: 30px;">
                 <p>El descanso que te mereces. Disfruta del mejor contenido con el culo pegado al sofá y tú kilo de palomitas, así que... ¡dale al Play!</p>
@@ -18,7 +20,7 @@ export const Login = () => {
 
             </div>
 
-            <Footer />
+            <Footer currentLanguage={currentLanguage}  />
 
         </>
     );
