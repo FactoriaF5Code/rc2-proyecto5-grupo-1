@@ -4,32 +4,29 @@ import { useEffect, useState } from "react";
 import { translations } from "./Languages.jsx";
 
 
-export const TerrorList = ({ currentLanguage }) => {
+export const CategoryMovieList = ({ currentLanguage, url, icon, categoryTitle }) => {
     const translatedTexts = translations[currentLanguage];
 
-    const [terrorMovies, setTerrorMovies] = useState([]);
+    const [viewMovies, setMovies] = useState([]);
 
     useEffect(() => {
-        const apiKey = "ca058e3f495796073a20627d0140ccc3";
-        const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=27&language=${currentLanguage}`;
 
-        
     fetch(url)
             .then((response) => response.json())
             .then((data) => {
-                setTerrorMovies(data.results);
+                setMovies(data.results);
         })
         .catch((error) => {
             console.error("Error al obtener datos de la API:", error);
         });
-    }, [currentLanguage]);
+    }, [currentLanguage, url]);
 
     return (
         <>
             <main className="galleryMovies">
                 <div className="listTitle">
-                    <img className="iconTitle" src="public/imgs/terror.svg" alt="icono terror" />
-                    <h2 className="listTitleH2">{translatedTexts.terror}</h2>
+                    <img className="iconTitle" src={icon} alt="icono terror" />
+                    <h2 className="listTitleH2">{categoryTitle}</h2>
                     <div className="moreHover">
                         <button>{translatedTexts.ver}
                             <svg id="arrowRight" width="12" height="8">
@@ -40,7 +37,7 @@ export const TerrorList = ({ currentLanguage }) => {
                     </div>
                 </div>
                 <div className="movieList">
-                        {terrorMovies.map((movie, index) => (
+                        {viewMovies.map((movie, index) => (
                         <Movie key={index} film={movie} />
                         ))}
                 </div>
