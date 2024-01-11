@@ -1,0 +1,76 @@
+:root {
+    --main-bgcolormain: #060613;
+    --main-colorblue: #08B7BA;
+    --main-colorwhite: #ffffff;
+    --main-colorpink: #F612AC;
+    --main-coloryellow: #FEED01;
+    --var-fontfamily: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.titulos {
+    text-align: center;
+    margin: 50px;
+}
+
+.subscribe-form {
+    width: 900px;
+    margin: 0 auto;
+
+}
+
+.subscribe-input {
+    width: 50%;
+    padding: 10px 20px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #000000cc;
+    height: 40px;
+    font-size: 18px;
+    color: #9c9c9c;
+
+
+}
+
+.subscribe-button {
+    background-color: var(--main-colorblue);
+    color: var(--main-bgcolormain);
+    padding: 18px 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 21px;
+}
+
+.subscribe-button:hover {
+    background-color: var(--main-colorpink);
+
+}
+
+.subtitulo {
+    color: var(--main-colorwhite);
+    font-size: 28px;
+
+}
+
+.titulo1 {
+    font-size: 72px;
+}
+
+.imagenfondo {
+    background-image: url(/public/imgs/fondopgweb.png);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    opacity: 20%;
+    background-position: bottom;
+
+}
+
+.contenidologin {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
