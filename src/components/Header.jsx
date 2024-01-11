@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { translations } from "./Languages.jsx";
 import "./Header.css";
-import "../index.css";
 import { IconSearch } from "./Svg/IconSearch.jsx";
 import { IconLanguage } from "./Svg/IconLanguage.jsx";
 
@@ -17,7 +16,7 @@ export const Header = ({ currentLanguage, setCurrentLanguage }) => {
           <img src="public/imgs/LOGO_RESTFLIX.png" alt="Logotipo Filmin" />
         </div>
         <div className="mainNav">
-          <a href="#">{translatedTexts.inicio}</a>
+          <Link to = "/">{translatedTexts.inicio}</Link>
           <a href="#">{translatedTexts.series}</a>
           <a href="#">{translatedTexts.peliculas}</a>
           <a href="#">{translatedTexts.novedades}</a>

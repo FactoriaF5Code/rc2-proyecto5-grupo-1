@@ -1,5 +1,4 @@
 import "./Footer.css";
-import "../index.css";
 import { TwitterLogo } from "./Svg/twitterLogo.jsx";
 import { InstagramLogo } from "./Svg/InstagramLogo.jsx";
 import { LinkedinLogo } from "./Svg/LinkedinLogo.jsx";

@@ -1,5 +1,4 @@
 import "./Movie.css";
-import "../index.css";
 import PropTypes from "prop-types";
 
 export const Movie = ({ film }) => {
